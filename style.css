@@ -393,3 +393,142 @@ footer {
   color: white;
   font-size: 1em;
 }
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive image */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background-color: #008080;
+  color: white;
+}
+
+header .logo-container {
+  display: flex;
+  gap: 10px;
+}
+
+header .logo img {
+  width: 80px; /* Adjust logo size */
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+nav ul {
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Banner Section */
+#banner .banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+.spotlight-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.spotlight {
+  text-align: center;
+  max-width: 200px;
+}
+
+/* Responsive Grid for News and Gallery */
+.news-item,
+.gallery-item {
+  margin-bottom: 20px;
+}
+
+.news-item img,
+.gallery-item img {
+  border-radius: 8px;
+}
+
+#news,
+#gallery {
+  padding: 20px;
+}
+
+.gallery-container,
+.news-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-item,
+.news-item {
+  flex: 1 1 calc(33.333% - 20px); /* 3 items per row */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* Media Queries for Small Devices */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gallery-item,
+  .news-item {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-item,
+  .news-item {
+    flex: 1 1 100%; /* 1 item per row */
+  }
+
+  header .logo img {
+    width: 60px; /* Smaller logo for small devices */
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+}
