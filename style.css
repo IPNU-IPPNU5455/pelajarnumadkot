@@ -1,0 +1,395 @@
+/* General Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4caf50; /* Hijau Kuat */
+  padding: 10px 20px;
+}
+
+header .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+header .logo-container .ipnu-logo,
+header .logo-container .ippnu-logo {
+  margin-right: 10px;
+}
+
+header .logo {
+  height: 50px; /* Atur tinggi logo */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  flex: 2;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ffeb3b; /* Warna kuning cerah saat hover */
+}
+
+/* Banner Section */
+#banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(45deg, #81c784, #4caf50); /* Gradient Hijau */
+}
+
+.banner-image img {
+  width: 100%;
+  height: 25%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.spotlight-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.spotlight {
+  text-align: center;
+  width: 15%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.spotlight img {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #fff;
+}
+
+.spotlight h3 {
+  color: white;
+  font-size: 0.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.spotlight:hover {
+  transform: scale(1.5); /* Zoom effect saat hover */
+}
+
+/* About Us Section */
+#about {
+  padding: 50px;
+  background: linear-gradient(135deg, #4caf50, #a5d6a7); /* Gradient Hijau */
+}
+
+#about h1 {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#about p {
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+#about blockquote {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-left: 5px solid #ffeb3b; /* Kuning terang */
+  padding: 20px;
+  margin: 20px 0;
+  font-style: italic;
+  font-size: 1.2em;
+  color: white;
+}
+
+#about blockquote footer {
+  text-align: right;
+  font-size: 1em;
+  color: #ffeb3b; /* Kuning */
+}
+
+/* News Section */
+#news {
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.news-item {
+  background-color: #dcedc8; /* Hijau Muda */
+  padding: 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #4caf50;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-10px); /* Efek naik sedikit saat hover */
+}
+
+.news-item h2 {
+  color: #4caf50;
+  font-size: 1.8em;
+}
+
+.news-item p {
+  color: #388e3c;
+}
+
+/* Gallery Section */
+#gallery {
+  padding: 50px;
+  background-color: #f1f8e9; /* Hijau Sangat Muda */
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.gallery-item {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1); /* Efek zoom pada gambar */
+}
+
+#gallery p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+#contact h1 {
+  text-align: center;
+  color: #4caf50;
+  font-size: 2em;
+}
+
+/* Join Us Section */
+#join {
+  text-align: center;
+  padding: 50px;
+  background-color: #4caf50; /* Hijau Kuat */
+  color: white;
+}
+
+#join h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#join p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Tombol Daftar Sekarang */
+#join a {
+  text-decoration: none;
+}
+
+#join button {
+  background-color: #ffeb3b; /* Warna Kuning Cerah */
+  color: #4caf50; /* Hijau Kuat */
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#join button:hover {
+  background-color: #fbc02d; /* Warna kuning lebih gelap saat hover */
+  transform: scale(1.1);
+}
+
+#join button:active {
+  background-color: #f57f17; /* Kuning lebih gelap saat diklik */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.1em;
+}
+/* Bagian CSS sebelumnya tetap ada */
+/* Header Styling */
+header {
+  background-color: #4caf50; /* Hijau dominan */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+}
+
+/* Styling untuk bagian News sebelumnya */
+#news {
+  padding: 50px 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+#news h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.news-item {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: scale(1.05);
+}
+
+.news-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Tombol Baca Selengkapnya */
+.read-more-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Tambahan CSS untuk halaman berita lengkap */
+
+/* Berita - Full News Section */
+#full-news {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#full-news h1 {
+  font-size: 2.5em;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+#full-news p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.news-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#full-news a.back-btn {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+#full-news a.back-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1em;
+}
